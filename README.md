@@ -348,20 +348,7 @@ python scheduler.py
 # Ctrl+A, D to detach
 ```
 
-#### Docker Deployment (Optional)
 
-Create a `Dockerfile`:
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY . .
-
-CMD ["python", "scheduler.py"]
-```
 
 Run:
 ```bash
@@ -439,9 +426,6 @@ This project is designed to be easily extended:
 2. Implement send methods
 3. Integrate in `PriceTracker`
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
